@@ -7,7 +7,7 @@ const Header = () => {
       <thead>
     <tr className="header_sec">
     <td id="logo">
-    <img src="src/assets/images/logo-dark.png" alt="logo" />
+    <img src="src/assets/images/logo-dark.png"  className="img-fluid" alt="logo" />
     </td>
     <td id="header_menu">
     <h6>HOME</h6>
@@ -18,7 +18,8 @@ const Header = () => {
     </thead>
     <tbody>
        <tr>
-        <td><img src={ContentImg}/></td>
+        <td><img src={ContentImg} alt="content-image"
+        className="img-fluid"/></td>
        </tr>
     </tbody>
     </table>

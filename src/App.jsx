@@ -8,13 +8,14 @@ import { Students} from './Component/Elements.jsx'
 import LineImg from './assets/Images/line.png'
 
 
-function Features({img,title,description,imgPosition,button}){
+function Features({img,title,description,imgPosition}){
  
   return(
-    <li className='Features_li'>
+    <li>
     {imgPosition==='start'&&<img src={img} alt="img1" />}
     <h5>{title}</h5>
     <p>{description}</p>
+    
     {imgPosition==='end'&&<img src={img} alt="img1" />}
     </li>
   )
@@ -29,30 +30,42 @@ const App = () => {
         <Features key={index} {...featuresProps} />
       ))}
     </section>
+
+    
     <div className='About_box'>
       <div className='About_list'>
       <h3>About Universh</h3>
       <img src={LineImg} />
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit repudiandae odit iste.Curabitur pellentesque neque eget diam</p>
-      </div>
-    <section className="About_coll">
-    {About_list.map((featuresProps, index) => (
-        <Features key={index} {...featuresProps} />
-      ))}
-    </section>
+     </div>
+      <section  className="About_coll">
+      {About_list.map((featuresProps, index) => (
+          <Features key={index} {...featuresProps} />
+        ))}
+      </section>
     </div>
+
+
+
     <div className='Courses_tab'>
-      <div className='courses_col'>
+      <div className='courses_list'>
       <h3>Our Featured Courses</h3>
       <img src={LineImg} />
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit repudiandae odit iste.Curabitur pellentesque neque eget diam</p>
       </div>
-    <section className="Courses_List">
-    {Courses.map((featuresProps, index) => (
-        <Features key={index} {...featuresProps} />
-      ))}
-    </section>
+      <section className="Courses_coll">
+      {Courses.map((featuresProps, index) => (
+          <Features key={index} {...featuresProps} />))
+      }
+      </section>
+    <div className='course_button'>
+    <button className="apply-now-button">Apply Now</button>
+    <button className="apply-now-button">Apply Now</button>
+    <button className="apply-now-button">Apply Now</button>
     </div>
+    </div>
+
+
     <div className='Students_blog'>
       <div className='Students_col'>
       <h3>Students Blogs</h3>
