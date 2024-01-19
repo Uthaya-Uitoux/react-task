@@ -53,19 +53,22 @@ export const Courses=[
         title:"Chemical Engineer",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit repudiandae odit iste.",
         img:CheEng,
-        imgPosition:"start"
+        imgPosition:"start",
+        button:"Apply Now"
     },
     {
         title:"Logo Designing",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit repudiandae odit iste.",
         img:LogoDsgn,
-        imgPosition:"start"
+        imgPosition:"start",
+        button:"Apply Now"
     },
     {
         title:"Web Development",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit repudiandae odit iste.",
         img:WebImg,
-        imgPosition:"start"
+        imgPosition:"start",
+        button:"Apply Now"
     }
 ]
 export const Students=[
@@ -73,6 +76,7 @@ export const Students=[
         title:"Blog Item Title",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit repudiandae odit iste.",
         img:CheEng,
-        imgPosition:"start"
+        imgPosition:"start",
+        button:"Apply Now"
     }
 ]

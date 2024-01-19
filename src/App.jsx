@@ -14,8 +14,31 @@ function Features({img,title,description,imgPosition}){
     <li>
     {imgPosition==='start'&&<img src={img} alt="img1" />}
     <h5>{title}</h5>
+    <p>{description}</p> 
+    {imgPosition==='end'&&<img src={img} alt="img1" />}
+    </li>
+  )
+}
+function Course({img,title,description,imgPosition,button}){
+ 
+  return(
+    <li>
+    {imgPosition==='start'&&<img src={img} alt="img1" />}
+    <h5>{title}</h5>
     <p>{description}</p>
-    
+    <button>{button}</button>
+    {imgPosition==='end'&&<img src={img} alt="img1" />}
+    </li>
+  )
+}
+
+function Student({img,title,description,imgPosition}){
+ 
+  return(
+    <li>
+    {imgPosition==='start'&&<img src={img} alt="img1" />}
+    <h5>{title}</h5>
+    <p>{description}</p>
     {imgPosition==='end'&&<img src={img} alt="img1" />}
     </li>
   )
@@ -55,14 +78,9 @@ const App = () => {
       </div>
       <section className="Courses_coll">
       {Courses.map((featuresProps, index) => (
-          <Features key={index} {...featuresProps} />))
+          <Course key={index} {...featuresProps} />))
       }
       </section>
-    <div className='course_button'>
-    <button className="apply-now-button">Apply Now</button>
-    <button className="apply-now-button">Apply Now</button>
-    <button className="apply-now-button">Apply Now</button>
-    </div>
     </div>
 
 
@@ -74,7 +92,7 @@ const App = () => {
       </div>
     <section className="Students_list">
     {Students.map((featuresProps, index) => (
-        <Features key={index} {...featuresProps} />
+        <Student key={index} {...featuresProps} />
       ))}
     </section>
     </div>

@@ -7,8 +7,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     /* Center the contents in each grid item */
-
-    /* Optional: Add some spacing between grid items */
     gap: 20px;
 }
 
@@ -36,7 +34,7 @@
     width: 100%; /* Ensure each item takes up the full width of its grid cell */
     box-sizing: border-box;
     padding:20px;
-    background: rgb(56, 93, 188);
+    background:  rgb(95, 154, 236);
     color:beige/* Include padding and border in the item's total width */
 }
 
@@ -113,8 +111,10 @@
     align-items: center;
   }
   
-  .courses_list {
+  .courses_list ,.Students_col{
     text-align: center;
+    margin: 50px;
+    padding:50px;
   }
   
   .Courses_coll {
@@ -136,13 +136,18 @@
     object-fit: cover; /* Make the image cover the entire box while maintaining aspect ratio */
     margin-bottom: 10px; /* Adjust margin as needed */
   }
-.course_button{
-    display: flex;
-    align-items: flex-start;
-}
+  .Courses_coll button{
+    list-style: none;
+    width:fit-content;
+    background: rgb(95, 154, 236);
+    color:white;
+  }
 @media (max-width: 767px) {
     .Courses_coll {
         grid-template-columns: 1fr; 
         justify-items: center;/* Change to a single column on smaller screens */
     }
+}
+.Students_blog{
+    background: rgb(199, 194, 194, 0.2);
 }
