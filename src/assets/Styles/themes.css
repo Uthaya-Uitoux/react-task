@@ -111,7 +111,7 @@
     align-items: center;
   }
   
-  .courses_list ,.Students_col{
+  .courses_list{
     text-align: center;
     margin: 50px;
     padding:50px;
@@ -151,3 +151,26 @@
 .Students_blog{
     background: rgb(199, 194, 194, 0.2);
 }
+.Students_list {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%; /* Make the grid take the full width */
+    margin-right: 30px;
+  }
+.Students_list li {
+    list-style: none;
+    text-align: start;
+    margin:50px;
+    width: min-content;
+    background: white;
+    padding:10px; /* Ensure each item takes up the full width of its grid cell */
+}
+.Students_col{
+    text-align: center;
+    margin-top: 50px;
+    padding:20px;
+  }
+.{
+    margin-bottom: 10px; /* Add space between title and image */
+  }

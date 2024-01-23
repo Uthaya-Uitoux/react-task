@@ -76,7 +76,18 @@ export const Students=[
         title:"Blog Item Title",
         description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit repudiandae odit iste.",
         img:CheEng,
-        imgPosition:"start",
-        button:"Apply Now"
+        imgPosition:"start"
+    },
+    {
+        title:"Blog Item Title",
+        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit repudiandae odit iste.",
+        img:CheEng,
+        imgPosition:"start"
+    },
+    {
+        title:"Blog Item Title",
+        description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit repudiandae odit iste.",
+        img:CheEng,
+        imgPosition:"start"
     }
 ]

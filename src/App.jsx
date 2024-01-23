@@ -38,8 +38,11 @@ function Student({img,title,description,imgPosition}){
     <li>
     {imgPosition==='start'&&<img src={img} alt="img1" />}
     <h5>{title}</h5>
+    <img src={LineImg} />
+    <p>14 Apr / 14 comments</p>
     <p>{description}</p>
     {imgPosition==='end'&&<img src={img} alt="img1" />}
+    
     </li>
   )
 }
