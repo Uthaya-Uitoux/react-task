@@ -18,8 +18,16 @@ const Header = () => {
     </thead>
     <tbody>
        <tr>
-        <td><img src={ContentImg} alt="content-image"
-        className="img-fluid"/></td>
+        <td>
+        <div className="image-container">
+        <img src={ContentImg} alt="content-image" className="img-fluid" />
+        <div className="overlay-text">
+          <h6>You only have to know one thing.</h6>
+          <h3>You Can Learn Anything</h3>
+          <button>Learn More</button>
+        </div>
+        </div>
+        </td>
        </tr>
     </tbody>
     </table>

@@ -1,17 +1,70 @@
-.container{
-    list-style: none;
-    margin: 0px;
-}
 
+.Fit_Page{
+  max-width:640px;
+  margin-left: 250px;
+}
 .header_sec {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* Center the contents in each grid item */
-    gap: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
 }
+#logo{
+  width:56%;
+}
+#header_menu {
+    display: flex;
+    justify-content: flex-end;
+    gap:10px;
+    margin: 10px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2px;
+}
+#header_menu h6{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(0, 0, 0,0.6);
+}
+.image-container {
+    list-style: none;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
 
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    justify-content: flex-end;
+    text-align: end;
+    color:rgb(0, 0, 0, 0.8);
+    margin: 0px;
+  }
+  .overlay-text h6{
+    font-style: italic;
+    font-size: 18px;
+    padding: 0%;
+  }
+  .overlay-text h3{
+    font-style: italic;
+  }
+  .overlay-text button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Set button background color as needed */
+    color: white; /* Set button text color as needed */
+    border: none;
+    cursor: pointer;
+  }
+  
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {
+      .Fit_Page{
+      margin: 10px;
+      }
     .header_sec {
         justify-items: center;
         grid-template-columns: 1fr; /* Change to a single column on smaller screens */
@@ -20,42 +73,43 @@
 
 /* Updated CSS with container-grid for .features_coll */
 .features_coll {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid with minimum column width of 300px */
-    gap: 20px; /* Adjust the gap as needed */
-    padding: 25px;
-    margin: 20px;
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid with minimum column width of 200px */
+  gap:25px;
+  margin: 50px 10px;
 }
 
 /* Styling for each item in the grid */
 .features_coll li {
     list-style: none;
     text-align: center;
-    width: 100%; /* Ensure each item takes up the full width of its grid cell */
-    box-sizing: border-box;
-    padding:20px;
-    background:  rgb(95, 154, 236);
+    font-size: 15px;
+    padding: 5px;
+    background:  rgb(57, 131, 228);
     color:beige/* Include padding and border in the item's total width */
 }
 
-/* Update Features component to use grid item styling */
 .features_coll Features {
     width: 100%; /* Make each item take up the full width of its grid cell */
 }
 
 /* Optional: If you want to make the images responsive within each item */
 .features_coll img {
-    max-width: 100%; /* Ensure images don't exceed the width of their container */
-    height: auto; /* Maintain the aspect ratio */
+    width:50px;
+    padding:10px;
 }
+@media (max-width: 767px) {
+  .features_coll{
+      width: 380px;
+      gap: 50px;
+      grid-template-columns: 1fr; /* Change to a single column on smaller screens */
+  }}
+  .features_coll li {
+    padding: 10px;
+    font-size: 12px;
+  }
 
-/* Updated CSS for #header_menu */
-#header_menu {
-    display: flex;
-    justify-content: flex-end;
-    gap: 8px;
-    margin: 10px 0 0 0; /* Adjust margin as needed */
-}
 .About_list,.courses_list{
     text-align: center;
 }
@@ -64,27 +118,30 @@
     color: white;
     display: grid;
     justify-content:center ;
-    padding:30px 0px;
-    margin:10px;
+    padding:50px 0px;
 }
 
 .About_coll,.Courses_coll {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 20px; /* Adjust the gap as needed */
-    width: auto;
-    justify-content: center; /* Center the grid items horizontally */
+    grid-template-columns: repeat(3, 1fr);
+    gap:30px;
+    padding:20px;
 }
+.About_box p{
+  list-style: none;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  padding: 0px 50px;
 
-/* Styling for each item in the grid */
+}
 .About_coll li {
-    margin: 20px;
     list-style: none;
     text-align: center;
     color: white;
     background: black;
-    width: 100%;
-    padding:10px; /* Ensure each item takes up the full width of its grid cell */
+    justify-content: space-around;
+    padding:20px;
 }
 
 .About_coll img {
@@ -106,30 +163,38 @@
     }
 }
 .Courses_tab {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    justify-content:center ;
+    padding:50px 0px;
   }
   
   .courses_list{
     text-align: center;
-    margin: 50px;
-    padding:50px;
   }
   
   .Courses_coll {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    width: 100%; /* Make the grid take the full width */
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
   }
-  
+
   .Courses_coll li {
     list-style: none;
     display: flex;
     flex-direction: column;
   }
   
+  .courses_list p {
+    list-style: none;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding: 0px 50px;
+    color: rgb(0, 0, 0,0.5);
+  }
+
   .Courses_coll img {
     width: 100%; /* Make the image take the full width of its container */
     height: auto;
@@ -139,8 +204,10 @@
   .Courses_coll button{
     list-style: none;
     width:fit-content;
-    background: rgb(95, 154, 236);
+    background: rgb(69, 142, 232);
     color:white;
+    font-weight:bold;
+    cursor: pointer;
   }
 @media (max-width: 767px) {
     .Courses_coll {
@@ -155,22 +222,54 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    width: 100%; /* Make the grid take the full width */
-    margin-right: 30px;
   }
 .Students_list li {
     list-style: none;
     text-align: start;
-    margin:50px;
-    width: min-content;
-    background: white;
-    padding:10px; /* Ensure each item takes up the full width of its grid cell */
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding: 20px;
 }
 .Students_col{
     text-align: center;
-    margin-top: 50px;
     padding:20px;
   }
-.{
-    margin-bottom: 10px; /* Add space between title and image */
+  .Students_col p {
+    list-style: none;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding: 0px 50px;
   }
+.Students_list img{
+  width:100%;
+}
+
+.Contact-details {
+    list-style: none;
+    color: rgb(255, 255, 255,0.8);
+    background: rgb(0, 0, 0,0.8);
+    display: flex; /* Use flexbox */
+    justify-content: space-around; /* Space elements evenly along the main axis */
+    align-items: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+.Universh,
+.Contact-list {
+  flex: 1; 
+  padding: 30px; 
+}
+.Contact-details h5 {
+  margin-top: 0;
+  font-weight: bold; /* Remove default margin */
+}
+
+p {
+  margin: 10px 0; /* Add vertical margin for paragraphs */
+}
+.images{
+  display: flex;
+  height: 24px;
+  padding-right: 10px;
+}
