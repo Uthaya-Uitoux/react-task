@@ -62,7 +62,6 @@
   }
   const App = () => {
     return (
-    <div className='container-sm'>
       <div className='Fit_Page'>
       <Header />
       <main>
@@ -117,30 +116,30 @@
       </div>
 
       <div className='Contact-details'>
-      <span className ="Universh" >
+      <div className ="Universh" >
        <h5>Universh</h5>
        <p>Lorem Ipsum is simply dummy text the printing and typesetting.</p>
        <p>Lorem Ipsum standard dummy text scrambled it make a type specimen reprehenderit in voluptate.
        </p>
-      </span>
-      <span className ="Contact-list" >
+      </div>
+      <div className ="Contact-list" >
       <h5>Contact</h5>
       <p>No.56, Area name, State, Country code.</p>
       <p>0 (123) 456-78-90</p>
       <p>info@universh.in</p>
-      <span className='images'>
+      <div className='images'>
        <img src={fb} />
        <img src={twitter} />
        <img src={google} />
        <img src={pinterest} />
        
-       </span>
-      </span>
+       </div>
+      </div>
       </div>
 
       </main>
     </div>
-    </div>
+
     )
   }
 
