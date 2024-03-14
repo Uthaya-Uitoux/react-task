@@ -121,6 +121,7 @@
        <p>Lorem Ipsum is simply dummy text the printing and typesetting.</p>
        <p>Lorem Ipsum standard dummy text scrambled it make a type specimen reprehenderit in voluptate.
        </p>
+       <h6>READ MORE</h6>
       </div>
       <div className ="Contact-list" >
       <h5>Contact</h5>
@@ -132,11 +133,15 @@
        <img src={twitter} />
        <img src={google} />
        <img src={pinterest} />
-       
        </div>
       </div>
       </div>
-
+      <div className='End-page'>
+      <span className='End-list'>
+      <p>Copyright © zozothemes.com., 2015 | All rights reserved</p>
+      <h6>unsubscribe.</h6>
+      </span>
+      </div>
       </main>
     </div>
 

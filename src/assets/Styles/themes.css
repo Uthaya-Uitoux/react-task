@@ -283,11 +283,43 @@ p {
   height: 24px;
   padding-right: 10px;
 }
+.Universh h6,.End-page h6{
+  color:rgb(57, 160, 224,0.7);
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
+}
 @media (max-width: 767px) {
   .Universh,
   .Contact-details {
     flex-direction: column;
     padding: 30px;
     margin-right:10px;
+  }
+}
+.End-page {
+  background: rgb(5, 5, 5,0.89);
+  color: rgb(255, 255, 255,0.7);
+  font-size: 12px;
+  padding:20px;
+ 
+}
+.End-list{
+  margin-left:10%; 
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap:20px;
+}
+.End-list p,
+.End-list h6 {
+  display: inline-block; /* Display both elements in a single line */
+  margin: 0;
+  margin-right: 50px;
+}
+@media (max-width: 767px) {
+  .End-list
+   {
+    justify-content: center;
+    grid-template-columns: 1fr; 
   }
 }
