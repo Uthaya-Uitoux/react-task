@@ -15,7 +15,7 @@
     return(
       <li>
       {imgPosition==='start'&&<img src={img} alt="img1" />}
-      <h5>{title}</h5>
+      <h5 className='features_title'>{title}</h5>
       <p>{description}</p> 
       {imgPosition==='end'&&<img src={img} alt="img1" />}
       </li>
@@ -26,7 +26,7 @@
     return(
       <li>
       {imgPosition==='start'&&<img src={img} alt="img1" />}
-      <h5>{title}</h5>
+      <h5 >{title}</h5>
       <p>{description}</p>
       <button>{button}</button>
       {imgPosition==='end'&&<img src={img} alt="img1" />}
@@ -38,12 +38,14 @@
   
     return(
       <li>
-      {imgPosition==='start'&&<img src={img} alt="img1" />}
-      <h5>{title}</h5>
-      <img src={LineImg} />
-      <p>14 Apr / 14 comments</p>
-      <p>{description}</p>
-      {imgPosition==='end'&&<img src={img} alt="img1" />}  
+        {imgPosition==='start'&&<img className='img-fluid' src={img} alt="img1" />}
+        <div className='Students_list_item'>
+          <h5>{title}</h5>
+          <img className='img-fluid' src={LineImg} />
+          <p>14 Apr / 14 comments</p>
+          <p>{description}</p>
+          {imgPosition==='end'&&<img src={img} alt="img1" />}  
+        </div>
       </li>
     )
   }

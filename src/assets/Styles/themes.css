@@ -1,7 +1,7 @@
-
 .Fit_Page{
   max-width:640px;
-  margin-left: 350px;
+  margin: auto;
+  background-color: #fff;
 }
 .header_sec {
     display: grid;
@@ -37,20 +37,22 @@
   .overlay-text {
     position: absolute;
     top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    justify-content: flex-end;
+    right: 30px;
+    transform: translateY(-50%);
     text-align: end;
     color:rgb(0, 0, 0, 0.8);
     margin: 0px;
+    row-gap: 20px;
   }
   .overlay-text h6{
     font-style: italic;
     font-size: 18px;
     padding: 0%;
+    margin-bottom: 20px;
   }
   .overlay-text h3{
-    font-style: italic;
+    font-size: 35px;
+    margin-bottom: 20px;
   }
   .overlay-text button {
     padding: 10px 20px;
@@ -78,20 +80,25 @@
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive grid with minimum column width of 200px */
   gap:25px;
   margin: 50px 10px;
+  padding: 10px,5px;
 }
+.features_coll li {
+  padding: 10px,0px;
+  font-size: 12px;
+}
+.features_title h5{
+font-weight: 800;
+font-size: 20px;
 
+}
 /* Styling for each item in the grid */
 .features_coll li {
     list-style: none;
     text-align: center;
     font-size: 15px;
-    padding: 5px;
+    padding: 10px, 0px;
     background:  rgb(57, 131, 228);
     color:beige/* Include padding and border in the item's total width */
-}
-
-.features_coll Features {
-    width: 100%; /* Make each item take up the full width of its grid cell */
 }
 
 /* Optional: If you want to make the images responsive within each item */
@@ -106,10 +113,8 @@
       margin:70px;
       grid-template-columns: 1fr;/* Change to a single column on smaller screens */
   }}
-  .features_coll li {
-    padding: 10px;
-    font-size: 12px;
-  }
+
+
 
 .About_list,.courses_list{
     text-align: center;
@@ -243,7 +248,7 @@
     padding: 0px 50px;
   }
 .Students_list img{
-  width:100%;
+  /* width:100%; */
 }
 @media (max-width: 767px) {
   .Students_list {
@@ -252,6 +257,11 @@
       grid-template-columns: 1fr; 
       justify-items: center;/* Change to a single column on smaller screens */
   }
+}
+
+.Students_list_item {
+  padding: 10px;
+  background-color: #fff;
 }
 
 .Contact-details {
@@ -316,10 +326,18 @@ p {
   margin: 0;
   margin-right: 50px;
 }
-@media (max-width: 767px) {
-  .End-list
-   {
-    justify-content: center;
-    grid-template-columns: 1fr; 
+
+@media screen and (max-width: 600px) {
+  .End-page{
+    width:448px;
   }
+.End-list{
+    justify-items: center;
+    grid-template-columns: 1fr; /* Change to a single column on smaller screens */
+}
+.End-list p,
+.End-list h6 {
+  display: block; /* Display both elements in a single line */
+  margin: 0;
+}
 }
